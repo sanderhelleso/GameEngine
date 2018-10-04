@@ -5,6 +5,7 @@ import renderEngine.DisplayManager;
 import renderEngine.Loader;
 import renderEngine.RawModel;
 import renderEngine.Renderer;
+import shaders.StaticShader;
 
 public class MainGameLoop {
 
@@ -15,6 +16,7 @@ public class MainGameLoop {
 
         Loader loader = new Loader();
         Renderer renderer = new Renderer();
+        StaticShader shader = new StaticShader();
 
         // openGL expects verticles to be defined counter clockwise by default
         float[] vericles = {
@@ -34,15 +36,16 @@ public class MainGameLoop {
 
         // run until window is closed
         while(!Display.isCloseRequested()) {
-            renderer.prepare();
 
             // game logic
+            renderer.prepare();
+            shader.start();
             renderer.render(model);
-
-            //render
+            shader.stop();
             DisplayManager.updateDisplay();
         }
 
+        shader.cleanUp();
         loader.cleanUp();
 
         // close window and process after window is closed
