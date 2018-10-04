@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feef097c-45c1-4809-bee5-62a87ada5745" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/Light.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/engineTester/MainGameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/engineTester/MainGameLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/renderEngine/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/renderEngine/Renderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/shaders/StaticShader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/shaders/StaticShader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/shaders/fragmentShader.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/textures/ModelTexture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/textures/ModelTexture.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderEngine/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Renderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/StaticShader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertexShader.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/ModelTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/ModelTexture.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,17 +27,17 @@
       <file leaf-file-name="vertexShader.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shaders/vertexShader.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="267">
+              <caret line="25" column="94" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragmentShader.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fragmentShader.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shaders/fragmentShader.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-73">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="187">
+              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -44,8 +45,8 @@
       <file leaf-file-name="StaticShader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shaders/StaticShader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="36" column="67" lean-forward="true" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
+            <state relative-caret-position="40">
+              <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Loader.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Loader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderEngine/Loader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="703">
               <caret line="59" column="89" selection-start-line="59" selection-start-column="89" selection-end-line="59" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -68,8 +69,8 @@
       <file leaf-file-name="Renderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+            <state relative-caret-position="170">
+              <caret line="48" column="85" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,10 +93,47 @@
       <file leaf-file-name="MainGameLoop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engineTester/MainGameLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-307">
-              <caret line="29" column="103" selection-start-line="29" selection-start-column="103" selection-end-line="29" selection-end-column="103" />
+            <state relative-caret-position="278">
+              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TexturedModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/TexturedModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding>
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelTexture.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/textures/ModelTexture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,18 +157,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderEngine/DisplayManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -148,7 +174,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/sanderhelleso/GameEngine/Main.java" />
         <option value="$PROJECT_DIR$/src/renderEngine/RawModel.java" />
-        <option value="$PROJECT_DIR$/src/textures/ModelTexture.java" />
         <option value="$PROJECT_DIR$/src/models/TexturedModel.java" />
         <option value="$PROJECT_DIR$/src/models/RawModel.java" />
         <option value="$PROJECT_DIR$/src/renderEngine/DisplayManager.java" />
@@ -158,12 +183,14 @@
         <option value="$PROJECT_DIR$/src/entities/Camera.java" />
         <option value="$PROJECT_DIR$/src/entities/Light.java" />
         <option value="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" />
-        <option value="$PROJECT_DIR$/src/renderEngine/Renderer.java" />
-        <option value="$PROJECT_DIR$/src/shaders/fragmentShader.txt" />
-        <option value="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" />
-        <option value="$PROJECT_DIR$/src/shaders/StaticShader.java" />
-        <option value="$PROJECT_DIR$/src/shaders/vertexShader.txt" />
         <option value="$PROJECT_DIR$/src/renderEngine/Loader.java" />
+        <option value="$PROJECT_DIR$/src/models/ModelTexture.java" />
+        <option value="$PROJECT_DIR$/src/textures/ModelTexture.java" />
+        <option value="$PROJECT_DIR$/src/shaders/StaticShader.java" />
+        <option value="$PROJECT_DIR$/src/renderEngine/Renderer.java" />
+        <option value="$PROJECT_DIR$/src/shaders/vertexShader.txt" />
+        <option value="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" />
+        <option value="$PROJECT_DIR$/src/shaders/fragmentShader.txt" />
       </list>
     </option>
   </component>
@@ -221,6 +248,12 @@
               <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GameEngine" type="b2602c69:ProjectViewProjectNode" />
@@ -449,25 +482,11 @@
     <entry file="file://$PROJECT_DIR$/out/production/GameEngine/renderEngine/Loader.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/textures/ModelTexture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/Entiti.java" />
     <entry file="file://$PROJECT_DIR$/src/models/RawModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/TexturedModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -537,43 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engineTester/MainGameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-307">
-          <caret line="29" column="103" selection-start-line="29" selection-start-column="103" selection-end-line="29" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/fragmentShader.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/StaticShader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="36" column="67" lean-forward="true" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shaders/ShaderProgram.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -592,20 +574,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shaders/vertexShader.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderEngine/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="703">
           <caret line="59" column="89" selection-start-line="59" selection-start-column="89" selection-end-line="59" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/ModelTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/TexturedModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/textures/ModelTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="48" column="85" selection-start-line="48" selection-start-column="85" selection-end-line="48" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engineTester/MainGameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shaders/vertexShader.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="25" column="94" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shaders/StaticShader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shaders/fragmentShader.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
         </state>
       </provider>
     </entry>
