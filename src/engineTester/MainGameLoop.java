@@ -19,8 +19,8 @@ public class MainGameLoop {
         DisplayManager.createDisplay();
 
         Loader loader = new Loader();
-        Renderer renderer = new Renderer();
         StaticShader shader = new StaticShader();
+        Renderer renderer = new Renderer(shader);
 
         // openGL expects verticles to be defined counter clockwise by default
         float[] vericles = {
@@ -48,10 +48,12 @@ public class MainGameLoop {
         TexturedModel staticModel = new TexturedModel(model, new ModelTexture(loader.loadTexture("image")));
 
 
-        Entity entity = new Entity(staticModel, new Vector3f(-1, 0, 0), 0, 0, 0, 1);
+        Entity entity = new Entity(staticModel, new Vector3f(0, 0, -1), 0, 0, 0, 1);
 
         // run until window is closed
         while(!Display.isCloseRequested()) {
+
+            entity.increasePosition(0, 0, -0.1f);
 
             // game logic
             renderer.prepare();
