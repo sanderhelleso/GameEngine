@@ -9,7 +9,12 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 import renderEngine.*;
 import shaders.StaticShader;
+import terrain.Terrain;
 import textures.ModelTexture;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class MainGameLoop {
 
@@ -20,17 +25,27 @@ public class MainGameLoop {
 
         Loader loader = new Loader();
 
-        RawModel model = OBJLoader.loadObjModel("dragon", loader);
+        RawModel model = OBJLoader.loadObjModel("tree", loader);
 
-        TexturedModel staticModel = new TexturedModel(model, new ModelTexture(loader.loadTexture("white")));
+        TexturedModel staticModel = new TexturedModel(model, new ModelTexture(loader.loadTexture("tree")));
 
         ModelTexture texture = staticModel.getTexture();
         texture.setShineDamper(10);
         texture.setReflectivity(1);
 
-        Entity entity = new Entity(staticModel, new Vector3f(0, 0, -50), 0, 0, 0, 1);
+        /*Entity entity = new Entity(staticModel, new Vector3f(0, 0, -50), 0, 0, 0, 1);*/
+        Random random = new Random();
 
-        Light light = new Light(new Vector3f(0, 0, -20), new Vector3f(1, 1, 1));
+        List<Entity> entities = new ArrayList<Entity>();
+        for(int i=0;i<500;i++){
+            entities.add(new Entity(staticModel, new Vector3f(random.nextFloat()*800 - 400,0,random.nextFloat() * -600),0,0,0,3));
+        }
+
+        Light light = new Light(new Vector3f(20000,20000,2000),new Vector3f(1,1,1));
+
+        Terrain terrain = new Terrain(0, 0, loader, new ModelTexture(loader.loadTexture("grass")));
+        Terrain terrain2 = new Terrain(1, 0, loader, new ModelTexture(loader.loadTexture("grass")));
+
 
         Camera camera = new Camera();
 
@@ -40,10 +55,16 @@ public class MainGameLoop {
         // run until window is closed
         while(!Display.isCloseRequested()) {
 
-            entity.increaseRotation(0, 1, 0);
             camera.move();
 
-            renderer.processEntity(entity);
+
+            renderer.processTerrain(terrain);
+            renderer.processTerrain(terrain2);
+
+            //renderer.processEntity(entity);
+            for(Entity entity : entities){
+                renderer.processEntity(entity);
+            }
 
             // game logic
             renderer.render(light, camera);
