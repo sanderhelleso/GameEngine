@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feef097c-45c1-4809-bee5-62a87ada5745" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/StaticShader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertexShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toolbox/Maths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toolbox/Maths.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,13 +62,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Renderer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Renderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="-68">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OBJLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderEngine/OBJLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-229">
+              <caret line="104" column="75" selection-start-line="104" selection-start-column="75" selection-end-line="104" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#736#746#0" expanded="true" />
+                <element signature="e#836#846#0" expanded="true" />
+                <element signature="e#896#906#0" expanded="true" />
+                <element signature="e#955#964#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainGameLoop.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainGameLoop.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engineTester/MainGameLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+            <state relative-caret-position="255">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,14 +197,15 @@
         <option value="$PROJECT_DIR$/src/entities/Camera.java" />
         <option value="$PROJECT_DIR$/src/shaders/vertexShader.txt" />
         <option value="$PROJECT_DIR$/src/shaders/StaticShader.java" />
-        <option value="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" />
         <option value="$PROJECT_DIR$/src/renderEngine/Renderer.java" />
+        <option value="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" />
+        <option value="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="856" />
-    <option name="width" value="1073" />
+    <option name="x" value="949" />
+    <option name="width" value="980" />
     <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -320,7 +335,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="571" y="0" width="715" height="687" extended-state="0" />
+    <frame x="633" y="0" width="653" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -331,12 +346,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26132405" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34320557" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13409415" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14710484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -540,20 +555,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engineTester/MainGameLoop.java">
+    <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+        <state relative-caret-position="-68">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderEngine/Renderer.java">
+    <entry file="file://$PROJECT_DIR$/src/renderEngine/OBJLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="-229">
+          <caret line="104" column="75" selection-start-line="104" selection-start-column="75" selection-end-line="104" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#736#746#0" expanded="true" />
+            <element signature="e#836#846#0" expanded="true" />
+            <element signature="e#896#906#0" expanded="true" />
+            <element signature="e#955#964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engineTester/MainGameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
