@@ -1,6 +1,7 @@
 package renderEngine;
 
 
+import objConverter.ModelData;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL15;
@@ -40,6 +41,10 @@ public class Loader {
         unbindVAO();
 
         return new RawModel(vaoID, indices.length);
+    }
+
+    public RawModel loadToVAO(ModelData modelData) {
+        return loadToVAO(modelData.getVertices(), modelData.getTextureCoords(), modelData.getNormals(), modelData.getIndices());
     }
 
     public int loadTexture(String fileName) {
