@@ -1,5 +1,6 @@
 package entities;
 
+import javafx.scene.input.KeyEvent;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
@@ -15,7 +16,7 @@ public class Camera {
     public Camera()
     {
 
-        this.speed = 0.5f;
+        this.speed = 1f;
 
     }
 
@@ -38,14 +39,14 @@ public class Camera {
 
         }
 
-        if (Keyboard.isKeyDown(Keyboard.KEY_W))
+        if (Keyboard.isKeyDown(Keyboard.KEY_W )|| Keyboard.isKeyDown(Keyboard.KEY_UP))
         {
 
             position.z += -(float)Math.cos(Math.toRadians(yaw)) * speed;
             position.x += (float)Math.sin(Math.toRadians(yaw)) * speed;
 
         }
-        else if (Keyboard.isKeyDown(Keyboard.KEY_S))
+        else if (Keyboard.isKeyDown(Keyboard.KEY_S) || Keyboard.isKeyDown(Keyboard.KEY_DOWN))
         {
             position.z -= -(float)Math.cos(Math.toRadians(yaw)) * speed;
             position.x -= (float)Math.sin(Math.toRadians(yaw)) * speed;
@@ -53,14 +54,14 @@ public class Camera {
 
         }
 
-        if (Keyboard.isKeyDown(Keyboard.KEY_D))
+        if (Keyboard.isKeyDown(Keyboard.KEY_D) || Keyboard.isKeyDown(Keyboard.KEY_RIGHT))
         {
 
             position.z += (float)Math.sin(Math.toRadians(yaw)) * speed;
             position.x += (float)Math.cos(Math.toRadians(yaw)) * speed;
 
         }
-        else if (Keyboard.isKeyDown(Keyboard.KEY_A))
+        else if (Keyboard.isKeyDown(Keyboard.KEY_A) || Keyboard.isKeyDown(Keyboard.KEY_LEFT))
         {
 
             position.z -= (float)Math.sin(Math.toRadians(yaw)) * speed;

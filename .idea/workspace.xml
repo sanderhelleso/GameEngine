@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feef097c-45c1-4809-bee5-62a87ada5745" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/engineTester/MainGameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/engineTester/MainGameLoop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/renderEngine/EntityRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/renderEngine/EntityRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/renderEngine/MasterRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/renderEngine/MasterRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/shaders/StaticShader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/shaders/StaticShader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/shaders/fragmentShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/shaders/vertexShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameEngine/textures/ModelTexture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameEngine/textures/ModelTexture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/EntityRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/EntityRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/StaticShader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertexShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/textures/ModelTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/ModelTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Camera.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,8 +133,8 @@
       <file leaf-file-name="Camera.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/entities/Camera.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="68" selection-end-column="9" />
+            <state relative-caret-position="125">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -355,12 +341,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34320557" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34320557" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19561815" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19561815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -819,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="125">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
