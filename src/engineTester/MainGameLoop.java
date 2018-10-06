@@ -19,6 +19,7 @@ import terrain.Terrain;
 import textures.ModelTexture;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;
+import toolbox.MousePicker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -147,11 +148,27 @@ public class MainGameLoop {
 
         GuiRenderer guiRenderer = new GuiRenderer(loader);
 
-        while (!Display.isCloseRequested()) {
-            camera.move();
-            player.move(terrain);
-            renderer.processEntity(player);
+        // mouse picker
+        MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
 
+        Entity lampEntity = (new Entity(lamp, new Vector3f(x, y, z), 0, 0, 0, 1));
+        entities.add(lampEntity);
+
+        Light light = ((new Light(new Vector3f(x, y+yOffset, z), new Vector3f(2, 0, 0), new Vector3f(1.0f, 0.01f, 0.002f))));
+        lights.add(light);
+
+        while (!Display.isCloseRequested()) {
+            player.move(terrain);
+            camera.move();
+
+            picker.update();
+            Vector3f terrainPoint = picker.getCurrentTerrainPoint();
+            if (terrainPoint != null) {
+                //lampEntity.setPosition(terrainPoint);
+                //light.setPosition(new Vector3f(terrainPoint.x, terrainPoint.y + yOffset, terrainPoint.z));
+            }
+
+            renderer.processEntity(player);
             renderer.processTerrain(terrain);
 
             for (Entity entity : entities) {
