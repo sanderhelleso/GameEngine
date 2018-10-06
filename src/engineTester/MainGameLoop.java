@@ -45,9 +45,9 @@ public class MainGameLoop {
         TexturedModel box = new TexturedModel(OBJLoader.loadObjModel("box", loader), new ModelTexture(loader.loadTexture("box")));
         TexturedModel bobble = new TexturedModel(OBJLoader.loadObjModel("lowPolyTree", loader), new ModelTexture(loader.loadTexture("lowPolyTree")));
 
-        ModelTexture fernTexture = new ModelTexture(loader.loadTexture("fern"));
-
-        TexturedModel fern = new TexturedModel(OBJLoader.loadObjModel("fern", loader), fernTexture);
+        ModelTexture fernTextureAtlas = new ModelTexture(loader.loadTexture("fern"));
+        fernTextureAtlas.setNumberOfRows(2);
+        TexturedModel fern = new TexturedModel(OBJLoader.loadObjModel("fern", loader), fernTextureAtlas);
 
         grass.getTexture().setUseFakeLighting(true);
         flower.getTexture().setUseFakeLighting(true);
@@ -62,8 +62,6 @@ public class MainGameLoop {
                 float y = terrain.getHeightOfTerrain(x, z);
 
                 entities.add(new Entity(bobble, new Vector3f(x, y, z), 0, random.nextFloat() * 360, 0, 0.9f));
-
-                entities.add(new Entity(fern, new Vector3f(x, y, z), 0, random.nextFloat() * 360, 0, 1.5f));
 
                 entities.add(new Entity(grass, new Vector3f(x, y, z), 0, 0, 0, 1.8f));
 

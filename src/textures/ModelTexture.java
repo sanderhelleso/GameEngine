@@ -7,8 +7,26 @@ public class ModelTexture {
     private float shineDamper = 1;
     private float reflectivity = 0;
 
-    private boolean hasTransparancy = false;
+    private boolean hasTransparency = false;
     private boolean useFakeLighting = false;
+
+    private int numberOfRows = 1;
+
+    public boolean isHasTransparency() {
+        return hasTransparency;
+    }
+
+    public void setHasTransparency(boolean hasTransparency) {
+        this.hasTransparency = hasTransparency;
+    }
+
+    public int getNumberOfRows() {
+        return numberOfRows;
+    }
+
+    public void setNumberOfRows(int numberOfRows) {
+        this.numberOfRows = numberOfRows;
+    }
 
     public ModelTexture(int id) {
         this.textureID = id;
@@ -43,11 +61,11 @@ public class ModelTexture {
     }
 
     public boolean isHasTransparancy() {
-        return hasTransparancy;
+        return hasTransparency;
     }
 
     public void setHasTransparancy(boolean hasTransparancy) {
-        this.hasTransparancy = hasTransparancy;
+        this.hasTransparency = hasTransparancy;
     }
 
     public boolean isUseFakeLighting() {
