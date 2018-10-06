@@ -20,6 +20,9 @@ import textures.ModelTexture;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;
 import toolbox.MousePicker;
+import water.WaterRenderer;
+import water.WaterShader;
+import water.WaterTile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -162,6 +165,11 @@ public class MainGameLoop {
         // mouse picker
         MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
 
+        WaterShader waterShader = new WaterShader();
+        WaterRenderer waterRenderer = new WaterRenderer(loader, waterShader, renderer.getProjectionMatrix());
+        List<WaterTile> waters = new ArrayList<WaterTile>();
+        waters.add(new WaterTile(75, -75, 0));
+
 
         // ****************' MAIN GAME LOOP *******************
 
@@ -172,6 +180,7 @@ public class MainGameLoop {
 
             renderer.renderScene(entities, terrains, lights, camera, player);
 
+            waterRenderer.render(waters, camera);
             guiRenderer.render(guis);
             DisplayManager.updateDisplay();
         }
@@ -179,6 +188,7 @@ public class MainGameLoop {
         // ******************************************************
 
         // clean up
+        waterShader.cleanUp();
         guiRenderer.cleanUp();
         renderer.cleanUp();
         loader.cleanUp();
