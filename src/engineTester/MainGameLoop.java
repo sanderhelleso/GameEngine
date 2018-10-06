@@ -4,11 +4,14 @@ import entities.Camera;
 import entities.Entity;
 import entities.Light;
 import entities.Player;
+import guis.GuiRenderer;
+import guis.GuiTexture;
 import models.RawModel;
 import models.TexturedModel;
 import objConverter.ModelData;
 import objConverter.OBJFileLoader;
 import org.lwjgl.opengl.Display;
+import org.lwjgl.util.vector.Vector2f;
 import org.lwjgl.util.vector.Vector3f;
 import renderEngine.*;
 import shaders.StaticShader;
@@ -113,6 +116,12 @@ public class MainGameLoop {
         Player player = new Player(avatarModel, new Vector3f(100, 0, -50), 0, 0, 0, 1);
         Camera camera = new Camera(player);
 
+        List<GuiTexture> guis = new ArrayList<GuiTexture>();
+        GuiTexture gui = new GuiTexture(loader.loadTexture("runescape"), new Vector2f(-0.7f, 0.7f), new Vector2f(0.20f, 0.20f));
+        guis.add(gui);
+
+        GuiRenderer guiRenderer = new GuiRenderer(loader);
+
         while (!Display.isCloseRequested()) {
             camera.move();
             player.move(terrain);
@@ -125,9 +134,12 @@ public class MainGameLoop {
                 renderer.processEntity(entity);
             }
             renderer.render(light, camera);
+            guiRenderer.render(guis);
             DisplayManager.updateDisplay();
         }
 
+        // clean up
+        guiRenderer.cleanUp();
         renderer.cleanUp();
         loader.cleanUp();
 
