@@ -42,7 +42,12 @@ public class MainGameLoop {
         TerrainTexturePack texturePack = new TerrainTexturePack(backgroundTexture, rTexture,
                 gTexture, bTexture);
         TerrainTexture blendMap = new TerrainTexture(loader.loadTexture("blendMap"));
+
+
         Terrain terrain = new Terrain(0,-1,loader, texturePack, blendMap, "heightMap");
+        Terrain terrain2 = new Terrain(1,1,loader, texturePack, blendMap, "heightMap");
+        List<Terrain> terrains = new ArrayList<Terrain>();
+        terrains.add(terrain);
 
 
         // *****************************************
@@ -134,9 +139,6 @@ public class MainGameLoop {
 
         }
 
-        MasterRenderer renderer = new MasterRenderer(loader);
-
-
         RawModel avatar = OBJLoader.loadObjModel("person", loader);
         TexturedModel avatarModel = new TexturedModel(avatar, new ModelTexture(loader.loadTexture("playerTexture")));
         Player player = new Player(avatarModel, new Vector3f(100, 0, -50), 0, 0, 0, 1);
@@ -148,8 +150,6 @@ public class MainGameLoop {
 
         GuiRenderer guiRenderer = new GuiRenderer(loader);
 
-        // mouse picker
-        MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
 
         Entity lampEntity = (new Entity(lamp, new Vector3f(x, y, z), 0, 0, 0, 1));
         entities.add(lampEntity);
@@ -157,28 +157,26 @@ public class MainGameLoop {
         Light light = ((new Light(new Vector3f(x, y+yOffset, z), new Vector3f(2, 0, 0), new Vector3f(1.0f, 0.01f, 0.002f))));
         lights.add(light);
 
+        MasterRenderer renderer = new MasterRenderer(loader);
+
+        // mouse picker
+        MousePicker picker = new MousePicker(camera, renderer.getProjectionMatrix(), terrain);
+
+
+        // ****************' MAIN GAME LOOP *******************
+
         while (!Display.isCloseRequested()) {
             player.move(terrain);
             camera.move();
-
             picker.update();
-            Vector3f terrainPoint = picker.getCurrentTerrainPoint();
-            if (terrainPoint != null) {
-                //lampEntity.setPosition(terrainPoint);
-                //light.setPosition(new Vector3f(terrainPoint.x, terrainPoint.y + yOffset, terrainPoint.z));
-            }
 
-            renderer.processEntity(player);
-            renderer.processTerrain(terrain);
+            renderer.renderScene(entities, terrains, lights, camera, player);
 
-            for (Entity entity : entities) {
-                //entity.increaseRotation(0, 1, 0);
-                renderer.processEntity(entity);
-            }
-            renderer.render(lights, camera);
             guiRenderer.render(guis);
             DisplayManager.updateDisplay();
         }
+
+        // ******************************************************
 
         // clean up
         guiRenderer.cleanUp();

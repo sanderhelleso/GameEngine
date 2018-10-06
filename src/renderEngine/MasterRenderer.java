@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.sun.source.doctree.TextTree;
+import entities.Player;
 import models.TexturedModel;
 
 import org.lwjgl.opengl.Display;
@@ -52,6 +53,19 @@ public class MasterRenderer {
         renderer = new EntityRenderer(shader,projectionMatrix);
         terrainRenderer = new TerrainRenderer(terrainShader,projectionMatrix);
         skyboxRenderer = new SkyboxRenderer(loader, projectionMatrix);
+    }
+
+    public void renderScene(List<Entity> entities, List<Terrain> terrains, List<Light> lights, Camera camera, Player player) {
+        for (Terrain terrain : terrains) {
+            processTerrain(terrain);
+        }
+
+        for (Entity entity : entities) {
+            processEntity(entity);
+        }
+
+        processEntity(player);
+        render(lights, camera);
     }
 
     public void render(List<Light> lights,Camera camera){
