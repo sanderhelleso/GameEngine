@@ -133,7 +133,7 @@ public class MainGameLoop {
 
         }
 
-        MasterRenderer renderer = new MasterRenderer();
+        MasterRenderer renderer = new MasterRenderer(loader);
 
 
         RawModel avatar = OBJLoader.loadObjModel("person", loader);
