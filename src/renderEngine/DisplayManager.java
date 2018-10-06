@@ -7,8 +7,8 @@ import org.lwjgl.opengl.*;
 public class DisplayManager {
 
     // window size
-    private static final int WIDTH = 1280;
-    private static final int HEIGHT = 720;
+    private static final int WIDTH = 1500;
+    private static final int HEIGHT = 750;
     private static final int FPS_CAP = 120;
 
     private static long lastFrameTime;
@@ -23,12 +23,13 @@ public class DisplayManager {
 
         try {
             Display.setDisplayMode(new DisplayMode(WIDTH, HEIGHT));
+            //Display.setDisplayModeAndFullscreen(Display.getDesktopDisplayMode()); // fullscreen
+
             Display.create(new PixelFormat(), attribs);
             Display.setTitle("Game Engine");
         } catch (LWJGLException e) {
             e.printStackTrace();
         }
-
         GL11.glViewport(0, 0, WIDTH, HEIGHT);
         lastFrameTime = getCurrentTime();
     }
